@@ -1,4 +1,4 @@
-import close from "./assets/images/close.png";
+// import close from "./assets/images/close.png";
 import Footer from "./Footer";
 import "./modal.css";
 import banner from "./assets/images/earthmap.png";
