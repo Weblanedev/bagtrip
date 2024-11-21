@@ -115,9 +115,9 @@ header {
 }
 
 .bestT .cities {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
   width: 100%;
   margin-top: 3rem;
 }
@@ -126,7 +126,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 30%;
   box-shadow: 0 26.95px 27px 12px rgb(0 0 0 / 7%);
   border-radius: 10px;
 }

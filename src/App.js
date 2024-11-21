@@ -12,6 +12,7 @@ import Modal from "./Modal";
 import Contact from "./Contact";
 
 import "./App.css";
+import destinations from "./data/destinations";
 
 function App() {
   const [modalVisible, setModalVisible] = useState(false);
@@ -131,32 +132,25 @@ function App() {
         </p>
 
         <div class="cities">
-          <div>
-            <img src={rome} alt="rome" />
-            <p>Rome, Italy</p>
-            <p>$ 3000</p>
-          </div>
-          <div>
-            <img src={maldives} alt="maldives" />
-            <p>Maldives</p>
-            <p>$ 5900</p>
-          </div>
-          <div>
-            <img src={france} alt="paris" />
-            <p>Paris, France</p>
-            <p>$ 8870</p>
-          </div>
+          {destinations.map(destination => (
+            <div class="city">
+              <img src={destination.image} alt={destination.city} />
+              <p>
+                {destination.country}, {destination.city}
+              </p>
+              <p>{destination.price}</p>
+            </div>
+          ))}
         </div>
       </section>
 
       <footer>
         <div>
-          <p>Copyright © 2020 BagTrip</p>
+          <p>Copyright © {new Date().getFullYear()} BagTrip</p>
         </div>
         <div>
           <h2>Address</h2>
-          <p>Nigeria- Plot 8 The Providence St, Lekki Phase I, Lekki</p>
-          <p>Kenya- Royal Offices, Mogotio Road, Westland District, Nairobi</p>
+          <p>Nigeria - 4, Fred Omojole Street, Gbagada, Lagos State, Nigeria</p>
         </div>
       </footer>
     </>
