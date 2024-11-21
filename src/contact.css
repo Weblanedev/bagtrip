@@ -1,0 +1,110 @@
+.contact_section .logo_container {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_section .logo_container img {
+  width: 5rem;
+}
+
+.contact_section h1 {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+
+.contact_section p {
+  text-align: center;
+  font-size: 1rem;
+  width: 70%;
+  margin: 1rem auto;
+  margin-bottom: 2rem;
+  opacity: 0.7;
+}
+
+.contact_section form {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.contact_section form div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.contact_section form input,
+.contact_section form select,
+.contact_section form textarea {
+  width: 48%;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 10px;
+  font-size: 1rem;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .contact_section h1 {
+    font-size: 1.5rem;
+  }
+  .contact_section p {
+    font-size: 14px;
+    width: 100%;
+    line-height: unset;
+  }
+
+  .contact_section form div {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .contact_section form input,
+  .contact_section form select,
+  .contact_section form textarea {
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+.contact_section form input:focus,
+.contact_section form select:focus,
+.contact_section form textarea:focus {
+  outline: 1px solid var(--color-primary);
+}
+
+.contact_section form textarea {
+  width: 100%;
+}
+
+.contact_section form button {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.contact_section form .alert-success {
+  border: 1px solid rgba(36, 241, 6, 0.46);
+  background-color: rgba(7, 149, 66, 0.12156862745098039);
+  color: green;
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_section form .alert-success p {
+  margin: 0;
+  text-align: center;
+}
