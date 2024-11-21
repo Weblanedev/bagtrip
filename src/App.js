@@ -13,6 +13,7 @@ import Contact from "./Contact";
 
 import "./App.css";
 import destinations from "./data/destinations";
+import services from "./data/services";
 
 function App() {
   const [modalVisible, setModalVisible] = useState(false);
@@ -91,34 +92,12 @@ function App() {
         <div className="section_flex_info">
           <h2>Our Services</h2>
           <div className="info_check">
-            <p>
-              <img src={checkIcon} alt="check icon" />
-              Corporate Visa Counselling
-            </p>
-            <p>
-              <img src={checkIcon} alt="check icon" />
-              Corporate Travel Insurance
-            </p>
-            <p>
-              <img src={checkIcon} alt="check icon" />
-              Corporate Travel
-            </p>
-            <p>
-              <img src={checkIcon} alt="check icon" />
-              Corporate Ticketing and Reservations
-            </p>
-            <p>
-              <img src={checkIcon} alt="check icon" />
-              Corporate International Conferences / Fairs
-            </p>
-            <p>
-              <img src={checkIcon} alt="check icon" />
-              Corporate immigration Services
-            </p>
-            <p>
-              <img src={checkIcon} alt="check icon" />
-              Corporate Expatriate Management
-            </p>
+            {services.map(service => (
+              <p>
+                <img src={checkIcon} alt="check icon" />
+                {service}
+              </p>
+            ))}
           </div>
         </div>
       </section>
