@@ -4,9 +4,6 @@ import locationIcon from "./assets/images/location.png";
 import serverIcon from "./assets/images/Server.png";
 import featureImage from "./assets/images/corp.jpeg";
 import checkIcon from "./assets/images/check.png";
-import rome from "./assets/images/rome.jpeg";
-import maldives from "./assets/images/maldives.jpeg";
-import france from "./assets/images/paris.jpeg";
 
 import Modal from "./Modal";
 import Contact from "./Contact";
