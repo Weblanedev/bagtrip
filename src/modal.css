@@ -5,7 +5,7 @@
   z-index: 6;
   left: 0;
   top: 0;
-  background: rgba(246, 242, 243, 0.99);
+  background: #fff;
   transition: all 0.2s;
   overflow: scroll;
 }
@@ -33,9 +33,11 @@
   z-index: 9;
   margin: 0 auto;
   border-radius: 5px;
-  box-shadow: 0 2px 16px 0 rgba(33, 43, 54, 0.08),
-    0 31px 41px 0 rgba(33, 43, 54, 0.2);
+  /* box-shadow: 0 2px 16px 0 rgba(33, 43, 54, 0.08),
+    0 31px 41px 0 rgba(33, 43, 54, 0.2); */
   transition: all 0.8s;
+
+  border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 @media screen and (max-width: 690px) {
@@ -64,6 +66,12 @@
 .close {
   transform: translateY(-1rem);
   opacity: 0;
+}
+
+.banner {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 @keyframes moveUp {

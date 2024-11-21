@@ -304,7 +304,7 @@ p {
 footer {
   background-color: #f8f8f8;
   padding: 3rem;
-  margin-top: 15rem;
+  /* margin-top: 15rem; */
 }
 
 footer .footer_cta {
