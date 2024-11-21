@@ -14,6 +14,7 @@ import Contact from "./Contact";
 import "./App.css";
 import destinations from "./data/destinations";
 import services from "./data/services";
+import Footer from "./Footer";
 
 function App() {
   const [modalVisible, setModalVisible] = useState(false);
@@ -23,7 +24,6 @@ function App() {
       <Modal open={modalVisible} close={() => setModalVisible(false)}>
         <Contact />
       </Modal>
-
       <header>
         <nav>
           <div>
@@ -101,7 +101,6 @@ function App() {
           </div>
         </div>
       </section>
-
       <section class="bestT">
         <h2>Our Best Tour</h2>
         <p>
@@ -117,21 +116,12 @@ function App() {
               <p>
                 {destination.country}, {destination.city}
               </p>
-              <p>{destination.price}</p>
+              <p>${destination.price}</p>
             </div>
           ))}
         </div>
       </section>
-
-      <footer>
-        <div>
-          <p>Copyright © {new Date().getFullYear()} BagTrip</p>
-        </div>
-        <div>
-          <h2>Address</h2>
-          <p>Nigeria - 4, Fred Omojole Street, Gbagada, Lagos State, Nigeria</p>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
